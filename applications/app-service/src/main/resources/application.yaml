@@ -1,0 +1,34 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: "stats-service"
+  devtools:
+    add-properties: false
+  h2:
+    console:
+      enabled: true
+      path: "/h2"
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+dynamodb:
+  endpoint: http://localhost:8000  # <- DynamoDB Local
+  region: us-east-1
+  accessKey: dummy                 # <- Obligatorios aunque sea local
+  secretKey: dummy
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,prometheus"
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
