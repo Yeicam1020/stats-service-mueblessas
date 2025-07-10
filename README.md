@@ -30,8 +30,7 @@ Implementado bajo los principios de **Clean Architecture** utilizando el scaffol
 ## Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu_usuario/muebles-sas-stats-service.git
-cd muebles-sas-stats-service
+https://github.com/Yeicam1020/stats-service-mueblessas.git
 ```
 
 ## Estructura del proyecto
